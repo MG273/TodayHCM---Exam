@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TodayHCM - Exam</name>
+    </assembly>
+    <members>
+        <member name="M:TodayHCM___Exam.Controllers.v1.AccountController.PostRegister(TodayHCM.Core.DTO.RegisterDTO)">
+            <summary>
+            request a post method for register a user
+            </summary>
+            <param name="registerDTO">all parameters are necessary</param>
+            <returns>Return JWT</returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.AccountController.IsEmailAlreadyRegistered(System.String)">
+            <summary>
+            UI can check if Email is already used
+            </summary>
+            <param name="email">User Email</param>
+            <returns>return True or False</returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.AccountController.PostLogin(TodayHCM.Core.DTO.LoginDTO)">
+            <summary>
+            UI send post request to login
+            </summary>
+            <param name="loginDTO">all parameters are necessary</param>
+            <returns>return JWT</returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.AccountController.GetLogout">
+            <summary>
+            UI send get request to logout, user must auth
+            </summary>
+            <returns>empty</returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.ProductController.AddProduct(TodayHCM.Core.DTO.ProductAddRequest)">
+            <summary>
+            add a product with post request to this action method
+            </summary>
+            <param name="productAddRequest">all parameters are necessary</param>
+            <returns>return object that you add to body if it save to DB</returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.ProductController.GetAllProduct">
+            <summary>
+            send get request to this action and get back all of product
+            </summary>
+            <returns>return a list of product</returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.ProductController.GetProductID(System.Int32)">
+            <summary>
+            send get request with ID in route string and get specific product
+            </summary>
+            <param name="id">ID of product</param>
+            <returns>return an object of Product</returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.ProductController.GetProductName(System.String)">
+            <summary>
+            you can get product by name
+            </summary>
+            <param name="NameProduct">Name of Product</param>
+            <returns>return an object of product</returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.ProductController.GetFilteredProduct(System.Numerics.BigInteger,System.Numerics.BigInteger)">
+            <summary>
+            you can Filter Product by price
+            </summary>
+            <param name="start">min Price</param>
+            <param name="end">max Price</param>
+            <returns>return a list of product</returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.ProductController.GetCountOfProduct(System.Int32)">
+            <summary>
+            and you can send request and get count of product
+            </summary>
+            <param name="id">ID of product</param>
+            <returns>return Count</returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.TransactionController.GetAllTransaction">
+            <summary>
+            get all transaction in DB
+            </summary>
+            <returns>return a list of Transaction Model</returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.TransactionController.GetTransaction(System.Int32)">
+            <summary>
+            you can search by ID
+            </summary>
+            <param name="id">ID of Transaction</param>
+            <returns></returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.TransactionController.AddSellTransaction(System.Int32,System.Int32,System.Int32,System.DateTime)">
+            <summary>
+            you have storage and if some one buy a product form your store you must add transaction sell
+            because a product leave your storage 
+            </summary>
+            <param name="UserID">ID of User</param>
+            <param name="ProductID">ID of Product</param>
+            <param name="Quantity">count of product</param>
+            <param name="Time">and Time a customer buy from your store</param>
+            <returns>return Ture if its successful</returns>
+        </member>
+        <member name="M:TodayHCM___Exam.Controllers.v1.TransactionController.AddBuyTransaction(System.Int32,System.Int32,System.Int32,System.DateTime)">
+            <summary>
+            if some one buy a product form your store you must add product to your storage again 
+            </summary>
+            <param name="UserID">ID of User</param>
+            <param name="ProductID">ID of Product</param>
+            <param name="Quantity">count of product</param>
+            <param name="Time">and Time a customer buy from your store</param>
+            <returns>return Ture if its successful</returns>
+        </member>
+    </members>
+</doc>

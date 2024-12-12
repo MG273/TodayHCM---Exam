@@ -1,0 +1,9 @@
+﻿global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore;
+global using TodayHCM.Core.Domain.Entities;
+global using TodayHCM.Core.Domain.identity;
+global using TodayHCM.Core.Domain.RepositoryContracts;
+global using TodayHCM.Infrastructure.DatabaseContext;
+global using Microsoft.Data.SqlClient;
+global using System.Data;
+global using System.Numerics;
